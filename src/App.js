@@ -1,6 +1,5 @@
 
 import './App.css';
-import Header from './components/Header';
 import { Routes, Route } from "react-router-dom";
 import MenProducts from './components/men/MenProducts';
 import WomenProducts from './components/women/WomenProducts';
@@ -10,12 +9,13 @@ function App()
 {
   return (
     <>
-      <Header />
       <Routes>
-        <Route exact path='/' element={<Home/>} />
-        <Route exact path="/menProduct" element={<MenProducts />} />
-        <Route exact path="/womenProduct" element={<WomenProducts />} />
-        <Route exact path="/latestProduct" element={<LatestProducts />} />
+        <Route exact path='/e-commerce' element={<Home/>} />
+        <Route path="/menProduct" element={<MenProducts />} />
+        <Route path="/womenProduct" element={<WomenProducts />} />
+        <Route path="/latestProduct" element={<LatestProducts />} />
+
+        <Route path="*" element={<Home />} />
       </Routes>
     </>
   );
