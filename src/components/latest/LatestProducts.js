@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../reusable/Layout'
 
 const LatestProducts = () => {
   return (
-    <div>LatestProducts</div>
+    <Layout>
+      <h2>Layout</h2>
+   </Layout>
   )
 }
 

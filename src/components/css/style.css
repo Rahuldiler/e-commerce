@@ -141,7 +141,7 @@
 }
 .productsCard .filter {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-bottom: 1rem;
   align-items: center;
 }

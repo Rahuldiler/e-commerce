@@ -5,7 +5,6 @@ const MenProductCard = (props) =>
     return (
         <>
             <div className="card productCardDetail">
-
                 <div className="card-img">
                     <img src={props.data.image} alt="" />
 
@@ -57,7 +56,6 @@ const MenProductCard = (props) =>
                         </p>
                     </div>
                 </div>
-
             </div>
         </>
     )
