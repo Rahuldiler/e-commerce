@@ -1,32 +1,30 @@
-
-
-import MenProductCard from './MenProductCard';
+import ProductCard from './ProductCard';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import "../css/style.css";
 import DataFetchLoader from '../Loaders/DataFetchLoader';
 import Layout from '../reusable/Layout';
 import { Link } from "react-router-dom"
-import { useDispatch } from 'react-redux';
-const MenProducts = () =>
+const Products = () =>
 {
   const defaultSelectValue = "Apply Filter"
   const [product, setProduct] = useState([]);
   const [selected, setSelected] = useState(defaultSelectValue)
-  const dispatch = useDispatch();
   useEffect(() =>
   {
     const handleQuestion = async () =>
     {
       const res = await axios.get('https://fakestoreapi.com/products')
-     .catch((err) =>
-     {
-       console.log(err);
-     })
-      dispatch(setProduct(res.data));
+      try
+      {
+        setProduct(res.data)
+      } catch (error)
+      {
+        console.log(error);
+      }
     };
     handleQuestion();
-    // eslint-diabled-next-line
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -63,7 +61,7 @@ const MenProducts = () =>
                       <>
                         <div className='col-lg-3 col-md-4 mb-4' key={id}>
                           <Link to={`/product/${id}`}>
-                            <MenProductCard data={index} />
+                            <ProductCard data={index} />
                           </Link>
                         </div>
                       </>
@@ -87,4 +85,4 @@ const MenProducts = () =>
   )
 }
 
-export default MenProducts;
+export default Products;

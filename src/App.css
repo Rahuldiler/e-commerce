@@ -3,8 +3,29 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "SignikaLight";
+  src: url("./components/fonts/Signika/static/Signika-Light.ttf");
+}
+@font-face {
+  font-family: "SignikaMedium";
+  src: url("./components/fonts/Signika/static/Signika-Medium.ttf");
+}
+@font-face {
+  font-family: "SignikaRegular";
+  src: url("./components/fonts/Signika/static/Signika-Regular.ttf");
+}
+@font-face {
+  font-family: "SignikaSemiBold";
+  src: url("./components/fonts/Signika/static/Signika-SemiBold.ttf");
+}
+@font-face {
+  font-family: "SignikaBold";
+  src: url("./components/fonts/Signika/static/Signika-Bold.ttf");
+}
 .nav-link {
   margin: 0 10px 0px 0px;
+  font-family: "SignikaLight";
 }
 .nav-link:hover {
   text-decoration: underline;

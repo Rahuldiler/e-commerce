@@ -157,4 +157,357 @@
 .productsCard .filter select {
   border: 1px solid rgb(174, 35, 32);
   padding: 5px;
+}
+
+.register_wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register_wrapper .container {
+  display: flex;
+  justify-content: center;
+}
+.register_wrapper .container .login_section {
+  width: 800px;
+  display: grid;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  grid-template-columns: 1fr 1fr;
+}
+.register_wrapper .container .login_section .img_Wrap {
+  height: 100%;
+  position: relative;
+}
+.register_wrapper .container .login_section .img_Wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+.register_wrapper .container .login_section .img_Wrap .img_ban_text {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 100%;
+  padding-bottom: 3rem;
+  transform: translate(-50%, -50%);
+}
+.register_wrapper .container .login_section .img_Wrap .img_ban_text h2 {
+  display: flex;
+  align-items: flex-end;
+}
+.register_wrapper .container .login_section .img_Wrap .img_ban_text h2 p {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #fff;
+  font-family: "SignikaMedium";
+}
+.register_wrapper .container .login_section .img_Wrap .img_ban_text h2 span {
+  color: #eb7f25;
+  margin-bottom: 0;
+  padding-left: 10px;
+  font-size: 24px;
+  font-family: "SignikaBold" !important;
+}
+.register_wrapper .container .login_section .img_Wrap .img_ban_text h3 {
+  font-size: 18px;
+  color: #fff;
+  font-family: "SignikaRegular";
+  margin-bottom: 2rem;
+}
+.register_wrapper .container .login_section .img_Wrap .img_ban_text a {
+  color: #fff;
+  background-color: #184375;
+  border: 1px solid #184375;
+  font-size: 14px;
+  padding: 0.4rem 2rem;
+  justify-content: center;
+  font-family: "SignikaMedium";
+}
+.register_wrapper .container .login_section .img_Wrap .img_ban_text a:hover {
+  color: #184375;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .register_wrapper .container .login_section .img_Wrap {
+    display: none;
+  }
+}
+.register_wrapper .container .login_section .signup_form {
+  padding: 1rem;
+  height: 100%;
+}
+.register_wrapper .container .login_section .signup_form .register_form_heading {
+  text-align: center;
+}
+.register_wrapper .container .login_section .signup_form .register_form_heading img {
+  width: 50px;
+}
+.register_wrapper .container .login_section .signup_form .register_form_heading h4 {
+  text-align: left;
+  margin: 1rem 0;
+  font-size: 22px;
+  font-family: "SignikaSemiBold";
+}
+.register_wrapper .container .login_section .signup_form .form-group {
+  position: relative;
+}
+.register_wrapper .container .login_section .signup_form .form-group label {
+  font-size: 12px;
+  color: #555;
+  font-family: "SignikaMedium";
+}
+.register_wrapper .container .login_section .signup_form .form-group .fa-solid {
+  color: #184375;
+  font-size: 16px;
+  position: absolute;
+  left: 15px;
+  top: 33px;
+}
+.register_wrapper .container .login_section .signup_form .form-group .form-control {
+  color: #555;
+  padding-left: 1.6rem;
+  border: 0;
+  border-bottom: 1px solid #184375;
+  font-size: 14px;
+  border-radius: 0px;
+  font-family: "SignikaRegular";
+}
+.register_wrapper .container .login_section .signup_form .form-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.register_wrapper .container .login_section .signup_form .btn {
+  color: #fff;
+  background-color: #184375;
+  border: 1px solid #184375;
+  font-size: 14px;
+  padding: 0.4rem 2rem;
+  margin: 1.8rem 0rem;
+  display: flex;
+  border-radius: 0px;
+  width: 100%;
+  justify-content: center;
+  font-family: "SignikaMedium";
+}
+.register_wrapper .container .login_section .signup_form .btn:hover {
+  color: #184375;
+  background-color: #fff;
+}
+.register_wrapper .container .login_section .signup_form .term_text {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.register_wrapper .container .login_section .signup_form .term_text label {
+  font-size: 12px;
+  color: #555;
+  font-family: "SignikaMedium";
+}
+.register_wrapper .container .login_section .signup_form .term_text a {
+  font-size: 12px;
+  color: #184375;
+  font-family: "SignikaMedium";
+}
+.register_wrapper .container .login_section .signup_form .term_text a:hover {
+  text-decoration: underline !important;
+}
+@media (max-width: 767px) {
+  .register_wrapper .container .login_section {
+    height: 100%;
+    display: block;
+  }
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  width: 100%;
+  padding: 0rem 2rem;
+  align-items: center;
+}
+.header .navbar-brand {
+  font-size: 26px;
+  font-family: "SignikaSemiBold";
+  color: #184375;
+  background-color: transparent;
+}
+.header .desktop_links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+.header .desktop_links .nav-item {
+  margin-left: 2rem;
+}
+.header .desktop_links .nav-item .nav-link {
+  color: #000;
+  font-size: 16px;
+  font-family: "SignikaMedium";
+}
+.header .desktop_links .nav-item .nav-link.active {
+  border-bottom: 2px solid #184375;
+  color: #184375;
+  background-color: transparent;
+}
+.header .nav-mobile {
+  margin-left: auto;
+  display: none;
+}
+.header .nav-mobile > .open_nav {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #184375;
+}
+.header .nav-mobile > .close_navlinks {
+  font-size: 22px;
+  color: #184375;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+.header .nav-mobile > .nav-mobile-div {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 220px;
+  height: 100vh;
+  background: #184375;
+  transition: 1s ease-in;
+  flex-direction: column;
+  z-index: 5;
+}
+.header .nav-mobile > .nav-mobile-div > .nav-mobile-links {
+  list-style: none;
+  padding-left: 0px;
+}
+.header .nav-mobile > .nav-mobile-div > .nav-mobile-links > .nav-item {
+  margin: 1rem;
+  display: flex;
+}
+.header .nav-mobile > .nav-mobile-div > .nav-mobile-links > .nav-item .nav-link {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 1rem 0 0;
+  font-family: "SignikaMedium";
+}
+.header .nav-mobile > .nav-mobile-div > .nav-mobile-links > .nav-item .nav-link.active {
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .header .desktop_links {
+    display: none;
+  }
+  .header .nav-mobile {
+    display: block;
+  }
+}
+
+.banner_section {
+  position: relative;
+}
+
+.top_trending {
+  padding: 2rem 0rem;
+}
+.top_trending h2 {
+  color: #184375;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-family: "SignikaBold";
+}
+.top_trending p {
+  color: #184375;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-family: "SignikaMedium";
+}
+.top_trending .thumbnails {
+  justify-content: center;
+}
+.top_trending .thumbnails img {
+  width: 200px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.what_we_do {
+  height: 600px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #6ca9ef;
+  justify-content: center;
+  margin: 0 1rem;
+  border-radius: 20px;
+}
+.what_we_do h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 24px;
+  text-align: center;
+  font-family: "SignikaBold";
+}
+.what_we_do .carousel-item {
+  border-radius: 20px;
+}
+.what_we_do .carousel-item img {
+  border-radius: 20px 0px 0px 20px;
+  height: 100%;
+}
+.what_we_do .carousel-item .what_right {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 0px 20px 20px 0px;
+}
+.what_we_do .carousel-item .what_right h2 {
+  color: #184375;
+  font-size: 18px;
+  font-family: "SignikaSemiBold";
+}
+.what_we_do .carousel-item .what_right h2:after {
+  content: "--";
+  margin-left: 5px;
+}
+.what_we_do .carousel-item .what_right p {
+  color: #184375;
+  display: flex;
+  align-items: baseline;
+  margin: 1rem 0;
+}
+.what_we_do .carousel-item .what_right p span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "SignikaRegular";
+}
+.what_we_do .carousel-item .what_right .reviews_wrapper {
+  padding: 1rem 0;
+}
+.what_we_do .carousel-item .what_right .reviews_wrapper .rating {
+  display: flex;
+  align-items: center;
+}
+.what_we_do .carousel-item .what_right .reviews_wrapper .rating > i {
+  padding-right: 5px;
+  color: #184375;
+}
+.what_we_do .carousel-item .what_right .reviews_wrapper .comments p > .btn {
+  color: #333;
+  font-size: 14px;
+  padding: 0;
+  font-family: "SignikaMedium";
+}
+.what_we_do .carousel-item .what_right .reviews_wrapper .comments .collapse {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */

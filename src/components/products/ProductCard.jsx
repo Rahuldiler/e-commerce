@@ -1,6 +1,6 @@
 
 import React from "react";
-const MenProductCard = (props) =>
+const ProductCard = (props) =>
 {
     return (
         <>
@@ -61,4 +61,4 @@ const MenProductCard = (props) =>
     )
 }
 
-export default MenProductCard
+export default ProductCard
