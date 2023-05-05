@@ -1,0 +1,71 @@
+.home_ban {
+    margin-top: 120px;
+    width: 100%;
+    position: relative;
+    background: hsl(348.79deg 57.22% 63.33%);
+}
+
+.home_ban img {
+    height: 100%;
+    opacity: 0.5;
+}
+
+.home_ban .breadcrumb_section {
+    background-color: #f5f5f5;
+    opacity: 0.5;
+    height: 340px;
+    width: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.home_ban .text_section {
+    height: 280px;
+    opacity: 1;
+    width: 280px;
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+.home_ban .text_section h2 {
+    font-family: "PoppinsBold";
+    font-size: 2rem;
+}
+.home_ban .breadcrumb {
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0rem;
+    justify-content: center;
+}
+.home_ban .breadcrumb li {
+    margin: 10px 0px;
+}
+.home_ban .breadcrumb li a {
+    color: #000;
+    font-size: 16px;
+    font-family: "PoppinsRegular";
+    text-decoration: none;
+}
+.home_ban .breadcrumb li.active {
+    color: #000;
+    font-size: 16px;
+    font-family: "PoppinsSemiBold";
+}
+.home_ban .breadcrumb li.active::before {
+    content: ">";
+    margin-bottom: 0rem;
+    display: inline-block;
+}

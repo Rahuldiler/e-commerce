@@ -1,0 +1,126 @@
+.header_wrapper {
+    background-color: #d60638;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin-top: 0px;
+    z-index: 999px;
+    align-items: center;
+}
+.header_wrapper .main_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_wrapper .main_head ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+}
+.header_wrapper .main_head .social_links li p {
+    margin-bottom: 0;
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 16px;
+    font-family: "PoppinsRegular";
+}
+.header_wrapper .main_head .social_links li a {
+    margin: 0px 10px;
+    padding: 0;
+    color: #fff;
+}
+.header_wrapper .main_head .social_links li a:hover {
+    color: #ff6060;
+}
+.header_wrapper .main_head .social_links li a svg {
+    width: 1.6rem;
+    font-size: 1.6rem;
+    height: 1.6rem;
+}
+/* CONTACT CSS START */
+.header_wrapper .main_head .contact_us li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "PoppinsRegular";
+}
+.header_wrapper .main_head .contact_us li a:hover,
+.header_wrapper .main_head .contact_us li a.active {
+    color: #ff6060;
+}
+
+.header_wrapper .main_head .btn {
+    color: #fff;
+    font-size: 14px;
+    font-family: "PoppinsRegular";
+    padding: 0;
+}
+.header_wrapper .main_head .btn i {
+    font-size: 14px;
+    margin-right: 10px;
+}
+/* MENU WRAPPER CSS START */
+.menu_wrapper {
+    height: 80px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+}
+.menu_wrapper .navbar .navbar-brand img {
+    width: 100px;
+}
+.menu_wrapper .navbar .navbar-nav .nav-link {
+    padding: 5px;
+    margin: 0px 10px;
+    font-size: 14px;
+    font-family: "PoppinsRegular";
+}
+.menu_wrapper .dropdown-menu {
+    padding: 0px;
+    border-radius: 0px;
+}
+.menu_wrapper .nav_drop:hover .dropdown-menu,
+.menu_wrapper .nav_drop:hover .dropdown-menu.show {
+    display: block;
+    padding: 0px;
+}
+.nav_drop .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    /* border:0px; */
+}
+.nav_drop .dropdown-item {
+    padding: 10px;
+    border: 1px 0px 1px 0px solid;
+}
+.nav_drop .dropdown-item:focus,
+.nav_drop .dropdown-item:hover {
+    background-color: #d60638;
+    padding: 10px;
+    color: #ffff;
+}
+
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 999;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: #ffffff !important;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
