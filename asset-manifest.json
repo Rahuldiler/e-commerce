@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/e-commerce/static/css/main.1718c9ba.css",
-    "main.js": "/e-commerce/static/js/main.eb1ee426.js",
+    "main.css": "/e-commerce/static/css/main.c46ec022.css",
+    "main.js": "/e-commerce/static/js/main.ec0d115f.js",
     "static/media/KIDSBANNER.png": "/e-commerce/static/media/KIDSBANNER.8371425c764e4578d7e7.png",
     "static/media/womenshirt.jpg": "/e-commerce/static/media/womenshirt.c08b39c864e24b86f54f.jpg",
     "static/media/Poppins-Light.ttf": "/e-commerce/static/media/Poppins-Light.25b96349cf564e8ba0dc.ttf",
@@ -9,12 +9,13 @@
     "static/media/Poppins-Medium.ttf": "/e-commerce/static/media/Poppins-Medium.c5eb70982e90502d0d01.ttf",
     "static/media/Poppins-SemiBold.ttf": "/e-commerce/static/media/Poppins-SemiBold.090bd619384bb8d4c289.ttf",
     "static/media/Poppins-Bold.ttf": "/e-commerce/static/media/Poppins-Bold.300a4da54f1e6258b6f7.ttf",
+    "static/media/newsletter.jpg": "/e-commerce/static/media/newsletter.d58680c155f193def3ca.jpg",
     "index.html": "/e-commerce/index.html",
-    "main.1718c9ba.css.map": "/e-commerce/static/css/main.1718c9ba.css.map",
-    "main.eb1ee426.js.map": "/e-commerce/static/js/main.eb1ee426.js.map"
+    "main.c46ec022.css.map": "/e-commerce/static/css/main.c46ec022.css.map",
+    "main.ec0d115f.js.map": "/e-commerce/static/js/main.ec0d115f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1718c9ba.css",
-    "static/js/main.eb1ee426.js"
+    "static/css/main.c46ec022.css",
+    "static/js/main.ec0d115f.js"
   ]
 }
