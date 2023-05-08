@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/header.css';
 import { Link, NavLink } from 'react-router-dom';
-import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
+import { Container, Dropdown,  Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import logo from "../images/logo.png";
 import { useEffect } from 'react';
 const Header = () =>
@@ -30,6 +30,8 @@ const Header = () =>
 
     return (
         <>
+
+
             <section className='header_wrapper'>
                 <div className='container'>
                     <div className='main_head'>
@@ -89,16 +91,33 @@ const Header = () =>
                                         </NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/cart">
-                                            <i className="fa-solid fa-user"></i>
-                                        </NavLink>
+                                        <Dropdown className='user_login'>
+                                            <Dropdown.Toggle variant="transparent" className='border-0 p-0' drop="start" id="dropdown-basic" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
+                                                <i className="fa-solid fa-user"></i>
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <NavLink to="/login">
+                                                    <i className="fa-solid fa-right-to-bracket"></i> Login
+                                                </NavLink>
+                                                <NavLink to="/signup">
+
+                                                    Sign In
+
+                                                </NavLink>
+                                                <button className='logout'>
+                                                    <i className="fa-solid fa-right-to-bracket me-1"></i> Sign Out
+                                                </button>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                      
                                     </li>
+
                                 </ul>
                                 <Navbar.Toggle aria-controls="responsive-navbar-nav">
                                     <i className="fa-solid fa-bars"></i>
                                 </Navbar.Toggle>
                             </div>
-
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="ms-auto">
                                     <Nav.Link href="#features">Home</Nav.Link>
@@ -134,27 +153,40 @@ const Header = () =>
                                     <Nav.Link href="#features">ContactUS</Nav.Link>
 
                                 </Nav>
-                                <Nav className='ms-auto d-none d-lg-flex'>
-                                    <Nav.Link to="/cart">
+                                <Nav className='ms-auto d-none d-lg-flex align-items-baseline'>
+                                    <Nav.Link className='px-0 mx-3' to="/cart">
                                         <i className="fa-solid fa-magnifying-glass"></i>
                                     </Nav.Link>
-                                    <Nav.Link to="/e-commerce">
+                                    <Nav.Link className='px-0 mx-3' to="/e-commerce">
                                         <i className="fa-solid fa-cart-shopping"></i>
                                     </Nav.Link>
-                                    <Nav.Link to="/e-commerce">
-                                        <i className="fa-solid fa-user"></i>
-                                    </Nav.Link>
+                                    <Dropdown className='user_login mx-3 d-flex align-items-center'>
+                                        <Dropdown.Toggle variant="transparent" className='border-0 p-0' id="dropdown-basic" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
+                                            <i className="fa-solid fa-user"></i>
+                                        </Dropdown.Toggle>
+
+                                        <Dropdown.Menu>
+                                            <NavLink to="/login">
+                                                <i className="fa-solid fa-right-to-bracket"></i> Login
+                                            </NavLink>
+                                            <NavLink to="/signup">
+
+                                                Sign In
+
+                                            </NavLink>
+                                            <button className='logout'>
+                                                <i className="fa-solid fa-right-to-bracket me-1"></i> Sign Out
+                                            </button>
+                                        </Dropdown.Menu>
+                                    </Dropdown>
                                 </Nav>
 
                             </Navbar.Collapse>
-
                         </Container>
                     </Navbar>
                 </div>
 
             </section>
-
-
         </>
     )
 }

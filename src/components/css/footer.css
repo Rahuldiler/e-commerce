@@ -113,13 +113,89 @@ ul {
     color: #fff;
     font-size: 24px;
 }
+.mobile_order_tracker {
+    display: none;
+}
+
+/* newslettercss start */
+.newsletter {
+    padding: 0rem 0rem 4rem 0;
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+.newsletter img {
+    height: 300px;
+    width: 100%;
+}
+.newsletter .form-control {
+    border-radius: 20px 0px 0px 20px;
+}
+.newsletter .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.newsletter .container {
+    position: relative;
+}
+.newsletter .input-group {
+    outline: none;
+    border-radius: 20px;
+}
+.newsletter .input-group :focus {
+    outline: none;
+    box-shadow: none;
+}
+.newsletter .btn {
+    background-color: #d60638;
+    border: 1px solid #d60638;
+    color: #fff;
+    font-size: 14px;
+    font-size: 14px;
+    font-family: "PoppinsRegular";
+    border-radius: 0px 20px 20px 0px;
+}
+.newsletter .btn:focus {
+    background-color: #fff;
+    color: #d60638;
+    outline: none;
+    border: 1px solid #d60638;
+}
+.newsletter .heading {
+    position: absolute;
+    top: 20%;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+.newsletter .heading h3 {
+    font-size: 24px;
+    font-family: "PoppinsSemiBold";
+    text-align: center;
+}
+.newsletter .heading p {
+    font-size: 16px;
+    font-family: "PoppinsRegular";
+    margin-bottom: 2rem;
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .mobile_order_tracker {
+        color: #fff !important;
+        font-size: 14px;
+        display: block;
+        font-family: "PoppinsRegular";
+        padding: 5px 10px;
+        background-color: #d60638 !important;
+    }
+}
 @media (max-width: 767px) {
     .logo_sec,
     .quick_links {
         text-align: center;
     }
-     .quick_links h3,
-    .payment_links h3{
+    .quick_links h3,
+    .payment_links h3 {
         margin: 0rem;
         margin-top: 1rem;
     }
@@ -130,6 +206,9 @@ ul {
         display: block;
         background-color: none;
         border-top: none;
-        width:0px;
+        width: 0px;
+    }
+    .newsletter .heading {
+        width: 90%;
     }
 }

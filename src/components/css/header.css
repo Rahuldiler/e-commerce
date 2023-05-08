@@ -76,9 +76,9 @@
     width: 100px;
 }
 .menu_wrapper .navbar .navbar-nav .nav-link {
-    padding: 5px;
+    /* padding: 5px; */
     margin: 0px 10px;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-family: "PoppinsRegular";
 }
 .menu_wrapper .dropdown-menu {
@@ -112,6 +112,9 @@
     border: none !important;
     box-shadow: none !important;
 }
+.mobile_cart {
+    display: none;
+}
 .is-sticky {
     position: fixed;
     top: 0;
@@ -125,6 +128,31 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
+.user_login .dropdown-menu {
+    min-width: 120px;
+    border: 0px;
+    box-shadow: 0pc 5px 10px 0px rgb(0, 0, 0, 0.3);
+}
+.user_login a {
+    color: rgba(0, 0, 0, 0.55);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 0.6rem 1rem;
+    font-family: "PoppinsRegular";
+}
+.user_login a.active {
+    background-color: transparent;
+}
+.user_login .logout {
+    border: 0;
+    font-size: 14px;
+    display: block;
+    background-color: transparent;
+    color: #d60638;
+    padding: 0.6rem 1rem;
+}
+
 @media (max-width: 991px) {
     .header_wrapper {
         display: none;
@@ -154,5 +182,12 @@
     }
     .mobile_cart li a {
         color: rgba(0, 0, 0, 0.55);
+    }
+}
+@media (max-width: 567px) {
+    .user_login .dropdown-menu {
+        right: 2px !important;
+        border: 0px;
+        box-shadow: 0pc 5px 10px 0px rgb(0, 0, 0, 0.3);
     }
 }

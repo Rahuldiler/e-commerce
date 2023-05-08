@@ -2,12 +2,35 @@ import React from 'react'
 import logo from '../images/footerlogo.png';
 import "../css/footer.css";
 import { Link } from 'react-router-dom';
+import newsletterImg from "../images/newsletter.jpg";
+import { Button, Form, InputGroup } from 'react-bootstrap';
 const Footer = () =>
 {
     return (
         <>
             <section className='newsletter'>
+                <div className='container'>
+                    <img src={newsletterImg} alt="newsletter" />
+                    <div className='heading'>
+                        <h3>
+                            NewsLetter
+                        </h3>
+                        <p>
+                            Join Now and get 20% off on your next purchase!
+                        </p>
+                        <InputGroup className="mb-3">
+                            <Form.Control
+                                placeholder="Recipient's username"
+                                aria-label="Recipient's username"
+                                aria-describedby="basic-addon2"
+                            />
+                            <Button id="button-addon2" type='button'>
+                                Send
+                            </Button>
+                        </InputGroup>
+                    </div>
 
+                </div>
             </section>
             <section className='footer_wrapper'>
                 <div className='container'>
@@ -51,6 +74,10 @@ const Footer = () =>
                                     <li>
                                         <Link to="/e-commerce">Arrivals </Link>
                                     </li>
+                                    <button className='btn mobile_order_tracker'>
+                                        <i className="fa-solid fa-location-dot me-2"></i>
+                                        Track Order
+                                    </button>
                                 </ul>
                             </div>
                         </div>
