@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/e-commerce/static/css/main.17839be9.css",
-    "main.js": "/e-commerce/static/js/main.cf6d701f.js",
-    "static/media/manProductsBanner.jpg": "/e-commerce/static/media/manProductsBanner.0334f6b5442146890721.jpg",
-    "static/media/fa-solid-900.ttf": "/e-commerce/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
-    "static/media/fa-brands-400.ttf": "/e-commerce/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
-    "static/media/fa-solid-900.woff2": "/e-commerce/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
-    "static/media/fa-brands-400.woff2": "/e-commerce/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
-    "static/media/fa-regular-400.ttf": "/e-commerce/static/media/fa-regular-400.d87474231f4192884802.ttf",
-    "static/media/fa-regular-400.woff2": "/e-commerce/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
-    "static/media/fa-v4compatibility.ttf": "/e-commerce/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
-    "static/media/fa-v4compatibility.woff2": "/e-commerce/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "main.css": "/e-commerce/static/css/main.1718c9ba.css",
+    "main.js": "/e-commerce/static/js/main.eb1ee426.js",
+    "static/media/KIDSBANNER.png": "/e-commerce/static/media/KIDSBANNER.8371425c764e4578d7e7.png",
+    "static/media/womenshirt.jpg": "/e-commerce/static/media/womenshirt.c08b39c864e24b86f54f.jpg",
+    "static/media/Poppins-Light.ttf": "/e-commerce/static/media/Poppins-Light.25b96349cf564e8ba0dc.ttf",
+    "static/media/Poppins-Regular.ttf": "/e-commerce/static/media/Poppins-Regular.4211496d0e075ffe7c2f.ttf",
+    "static/media/Poppins-Medium.ttf": "/e-commerce/static/media/Poppins-Medium.c5eb70982e90502d0d01.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/e-commerce/static/media/Poppins-SemiBold.090bd619384bb8d4c289.ttf",
+    "static/media/Poppins-Bold.ttf": "/e-commerce/static/media/Poppins-Bold.300a4da54f1e6258b6f7.ttf",
     "index.html": "/e-commerce/index.html",
-    "main.17839be9.css.map": "/e-commerce/static/css/main.17839be9.css.map",
-    "main.cf6d701f.js.map": "/e-commerce/static/js/main.cf6d701f.js.map"
+    "main.1718c9ba.css.map": "/e-commerce/static/css/main.1718c9ba.css.map",
+    "main.eb1ee426.js.map": "/e-commerce/static/js/main.eb1ee426.js.map"
   },
   "entrypoints": [
-    "static/css/main.17839be9.css",
-    "static/js/main.cf6d701f.js"
+    "static/css/main.1718c9ba.css",
+    "static/js/main.eb1ee426.js"
   ]
 }
