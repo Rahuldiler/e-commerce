@@ -6,6 +6,8 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import ErrorPage from './ErrorPage';
 import Home from './components/homepages/Home';
+import Login from './components/register/Login';
+import SignUp from './components/register/SignUp';
 
 function App()
 {
@@ -37,6 +39,8 @@ function App()
     <>
       <Routes>
         <Route exact path='/e-commerce' element={<Home />} />
+        <Route exact path='/login' element={<Login />} />
+        <Route exact path='/signup' element={<SignUp />} />
         {/* <Route path='/login' element={<Login users={user} getUserLocal={getUserLocal} addUserLocal={addUserLocal} />} />
         <Route path='/signup' element={<SignUp users={user} addUserLocal={addUserLocal} />} /> */}
    

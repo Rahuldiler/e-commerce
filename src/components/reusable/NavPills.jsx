@@ -6,8 +6,7 @@ import
     MDBTabsLink,
     MDBTabsContent,
     MDBTabsPane,
-    MDBRow,
-    MDBCol
+    MDBRow
 } from 'mdb-react-ui-kit';
 
 export default function NavPills()
@@ -27,8 +26,8 @@ export default function NavPills()
     return (
         <>
             <MDBRow>
-                <MDBCol size='3'>
-                    <MDBTabs pills className='flex-column text-center'>
+                <div className='col-md-3'>
+                    <MDBTabs pills className='flex-md-column text-center'>
                         <MDBTabsItem>
                             <MDBTabsLink className='mt-0' onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
                                 Description
@@ -45,8 +44,8 @@ export default function NavPills()
                             </MDBTabsLink>
                         </MDBTabsItem>
                     </MDBTabs>
-                </MDBCol>
-                <MDBCol size='9'>
+                </div>
+                <div className='col-md-9'>
                     <MDBTabsContent>
                         <MDBTabsPane show={verticalActive === 'tab1'}>
                             <p>
@@ -64,7 +63,7 @@ export default function NavPills()
                         <MDBTabsPane show={verticalActive === 'tab2'}>Profile content</MDBTabsPane>
                         <MDBTabsPane show={verticalActive === 'tab3'}>Messages content</MDBTabsPane>
                     </MDBTabsContent>
-                </MDBCol>
+                </div>
             </MDBRow>
         </>
     );

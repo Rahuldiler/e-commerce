@@ -1,5 +1,4 @@
 .home_ban {
-    margin-top: 120px;
     width: 100%;
     position: relative;
     background: hsl(348.79deg 57.22% 63.33%);
@@ -68,4 +67,37 @@
     content: ">";
     margin-bottom: 0rem;
     display: inline-block;
+}
+
+@media only screen and (max-width: 991px) {
+    .home_ban .breadcrumb_section {
+        width: 240px;
+        height: 240px;
+    }
+    .home_ban .text_section {
+        width: 200px;
+        height: 200px;
+    }
+    .home_ban .text_section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .home_ban .breadcrumb_section {
+        width: 260px;
+        height: 260px;
+    }
+    .home_ban img {
+        min-height: 400px;
+        opacity: 0.5;
+    }
+    .home_ban .text_section {
+        width: 230px;
+        padding: 10px;
+        height: 230px;
+    }
+    .home_ban .text_section h2 {
+        font-size: 30px;
+    }
 }

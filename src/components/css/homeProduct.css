@@ -95,7 +95,7 @@
     color: #fff;
     background-color: #d60638;
     border: 1px solid #d60638;
-    border-radius: 20px;
+    border-radius: 0px;
     padding: 8px 20px;
 }
 .product_wrapper .card .card_text .add_to_cart .btn i {
@@ -171,6 +171,7 @@
 .product_wrapper .nav-pills .nav-link.active {
     background-color: #d60638;
     color: #fff;
+    padding: 1rem 0.5rem;
 }
 .product_wrapper .tab-content {
     padding: 1rem 0.5rem;
@@ -206,4 +207,35 @@
     background-color: #d60638;
     border-top: 3px solid #d60638;
     width: 15%;
+}
+@media only screen and (max-width: 767px) {
+    .product_wrapper .product_details .product_heading h2 {
+        margin-bottom: 1rem;
+    }
+
+    .nav-pills {
+        align-items: baseline;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nav-pills .nav-item {
+        display: flex;
+        align-items: baseline;
+    }
+}
+@media (max-width: 568px) {
+     .product_wrapper .nav-pills{
+        margin-bottom: 1rem;
+     }
+    .product_wrapper .nav-pills .nav-link {
+        padding: 10px;
+        font-size: 12px;
+        margin: 0;
+    }
+    .product_wrapper .nav-pills .nav-link.active {
+        padding:10px;
+        font-size: 12px;
+    }
 }

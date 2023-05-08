@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/header.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import logo from "../images/logo.png";
 import { useEffect } from 'react';
@@ -23,7 +23,7 @@ const Header = () =>
     {
         const header = document.querySelector('.menu_wrapper');
         const scrollTop = window.scrollY;
-        scrollTop >= 40 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+        scrollTop ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
     };
 
 
@@ -76,7 +76,29 @@ const Header = () =>
                             <Navbar.Brand href="#home">
                                 <img src={logo} alt='logo' />
                             </Navbar.Brand>
-                            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                            <div className='mobile_cart'>
+                                <ul>
+                                    <li>
+                                        <NavLink to="/cart">
+                                            <i className="fa-solid fa-magnifying-glass"></i>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/cart">
+                                            <i className="fa-solid fa-cart-shopping"></i>
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/cart">
+                                            <i className="fa-solid fa-user"></i>
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                                <Navbar.Toggle aria-controls="responsive-navbar-nav">
+                                    <i className="fa-solid fa-bars"></i>
+                                </Navbar.Toggle>
+                            </div>
+
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="ms-auto">
                                     <Nav.Link href="#features">Home</Nav.Link>
@@ -112,12 +134,18 @@ const Header = () =>
                                     <Nav.Link href="#features">ContactUS</Nav.Link>
 
                                 </Nav>
-                                <Nav className='ms-auto'>
-                                    <Nav.Link to="/cart"><i className="fa-solid fa-magnifying-glass"></i>
+                                <Nav className='ms-auto d-none d-lg-flex'>
+                                    <Nav.Link to="/cart">
+                                        <i className="fa-solid fa-magnifying-glass"></i>
                                     </Nav.Link>
-                                    <Nav.Link to="/e-commerce"><i className="fa-solid fa-cart-shopping"></i></Nav.Link>
-                                    <Nav.Link to="/e-commerce"><i className="fa-solid fa-user"></i></Nav.Link>
+                                    <Nav.Link to="/e-commerce">
+                                        <i className="fa-solid fa-cart-shopping"></i>
+                                    </Nav.Link>
+                                    <Nav.Link to="/e-commerce">
+                                        <i className="fa-solid fa-user"></i>
+                                    </Nav.Link>
                                 </Nav>
+
                             </Navbar.Collapse>
 
                         </Container>

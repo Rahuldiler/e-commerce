@@ -1,0 +1,135 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer_wrapper {
+    background: #333;
+    padding: 2rem 0rem;
+}
+.footer_wrapper .logo_sec img {
+    width: 80px;
+    background: #fff;
+}
+
+.footer_wrapper .logo_sec p {
+    font-size: 14px;
+    color: #fff;
+    font-family: "PoppinsLight";
+    margin: 2rem 0;
+}
+.footer_wrapper .logo_sec h2 {
+    font-size: 14px;
+    color: #f5f5f5;
+    font-family: "PoppinsRegular";
+    line-height: 32px;
+}
+.footer_wrapper .logo_sec h2 span,
+.footer_wrapper .logo_sec a {
+    font-size: 14px;
+    color: #f5f5f5;
+    font-family: "PoppinsLight";
+}
+.quick_links ul {
+    padding-left: 0;
+}
+.quick_links ul li {
+    margin: 1rem 0;
+    color: #f5f5f5;
+}
+.quick_links ul li a {
+    color: #f5f5fe;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.quick_links h3 {
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    font-family: "PoppinsRegular";
+}
+.quick_links h3::after,
+.payment_links h3::after {
+    content: "";
+    display: block;
+    color: #d60638;
+    background-color: #d60638;
+    border-top: 2px solid #d60638;
+    width: 25%;
+}
+.payment_links h3 {
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+    font-family: "PoppinsRegular";
+}
+.payment_links ul {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: space-between;
+}
+.payment_links ul li {
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    display: block;
+    margin: 0px 10px 0px 0px;
+}
+.payment_links ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+}
+.follow_link ul {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.follow_link h2 {
+    font-size: 18px;
+    color: #f5f5f5;
+    margin-bottom: 1.5rem;
+    font-family: "PoppinsRegular";
+}
+.follow_link ul li {
+    margin: 0px 10px 0px 0px;
+    width: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px dotted #fff;
+    height: 40px !important;
+}
+.follow_link ul li a {
+    color: #fff;
+    font-size: 24px;
+}
+@media (max-width: 767px) {
+    .logo_sec,
+    .quick_links {
+        text-align: center;
+    }
+     .quick_links h3,
+    .payment_links h3{
+        margin: 0rem;
+        margin-top: 1rem;
+    }
+    .quick_links h3::after,
+    .payment_links h3::after {
+        content: "";
+        color: none;
+        display: block;
+        background-color: none;
+        border-top: none;
+        width:0px;
+    }
+}
