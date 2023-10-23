@@ -1,13 +1,12 @@
 
 import './App.css';
-// import Login from './components/register/Login';
-// import SignUp from './components/register/SignUp';
-// import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import ErrorPage from './ErrorPage';
 import Home from './components/homepages/Home';
 import Login from './components/register/Login';
 import SignUp from './components/register/SignUp';
+import CartItem from './components/cart/cartItem';
+import ProductDetails from './components/products/productDetails';
 
 function App()
 {
@@ -38,12 +37,11 @@ function App()
   return (
     <>
       <Routes>
-        <Route exact path='/e-commerce' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
+        <Route exact path='/cart' element={<CartItem />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<SignUp />} />
-        {/* <Route path='/login' element={<Login users={user} getUserLocal={getUserLocal} addUserLocal={addUserLocal} />} />
-        <Route path='/signup' element={<SignUp users={user} addUserLocal={addUserLocal} />} /> */}
-   
+        <Route exact path="/product/:id" element={<ProductDetails />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
 

@@ -1,36 +1,60 @@
-.related_card_text {
-    position: absolute;
-    bottom: 0px;
+.product_listing {
+    position: relative;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border: 1px solid #f7f7f7;
+    cursor: pointer;
+}
+.product_listing h3 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 8px 0px 4px;
+    font-weight: 500;
+    font-family: "PoppinsRegular";
+}
+.product_listing .prdct_img {
+    padding: 8px;
+}
+.product_listing img {
+    height: 280px;
+    object-fit: contain;
     width: 100%;
 }
-.related_card_text ul {
-    list-style: none;
-    margin-left: auto;
-    padding-left: 10px;
+.related_card_text {
+    width: 100%;
 }
-.related_card_text ul li .btn {
+.related_card_text .btn {
     font-size: 18px;
-    width: 40px;
-    height: 40px;
+    height: 100%;
+    padding: 7px 0px;
+    width: 25%;
     justify-content: center;
     display: flex;
     background-color: #fff;
     align-items: center;
-    border-radius: 50%;
-    border: 1px solid #707070;
-}
-.related_card_text ul li .btn:focus{
-    background-color: #d60638;
-    color: #fff;
+    border-radius: 0%;
     border: 1px solid #d60638;
 }
-.related_card_text h3 {
+.related_card_text .btn:focus {
+    background-color: #d60638;
+    color: #fff;
+}
+.related_card_text .price_section {
     font-size: 16px;
-    background: #fff;
+    /* background: hsl(348.79deg 57.22% 63.33%); */
     margin-bottom: 0;
-    border: 1px solid #333;
     text-align: center;
-    padding: 1rem 0;
+    display: flex;
+    align-items: center;
     font-family: "PoppinsMedium";
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.related_card_text .price_section p {
+    margin-bottom: 0px;
+    padding: 4px 10px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ef3030;
+    background-color: #fff;
+    color: #d60638;
 }

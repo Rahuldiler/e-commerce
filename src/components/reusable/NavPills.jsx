@@ -1,31 +1,31 @@
-import React, { useState } from 'react';
-import
-{
-    MDBTabs,
-    MDBTabsItem,
-    MDBTabsLink,
-    MDBTabsContent,
-    MDBTabsPane,
-    MDBRow
-} from 'mdb-react-ui-kit';
+import React from 'react';
+// import
+// {
+//     MDBTabs,
+//     MDBTabsItem,
+//     MDBTabsLink,
+//     MDBTabsContent,
+//     MDBTabsPane,
+//     MDBRow
+// } from 'mdb-react-ui-kit';
 
 export default function NavPills()
 {
-    const [verticalActive, setVerticalActive] = useState('tab1');
+    // const [verticalActive, setVerticalActive] = useState('tab1');
 
-    const handleVerticalClick = (value) =>
-    {
-        if (value === verticalActive)
-        {
-            return;
-        }
+    // const handleVerticalClick = (value) =>
+    // {
+    //     if (value === verticalActive)
+    //     {
+    //         return;
+    //     }
 
-        setVerticalActive(value);
-    };
+    //     setVerticalActive(value);
+    // };
 
     return (
         <>
-            <MDBRow>
+            {/* <MDBRow>
                 <div className='col-md-3'>
                     <MDBTabs pills className='flex-md-column text-center'>
                         <MDBTabsItem>
@@ -64,7 +64,7 @@ export default function NavPills()
                         <MDBTabsPane show={verticalActive === 'tab3'}>Messages content</MDBTabsPane>
                     </MDBTabsContent>
                 </div>
-            </MDBRow>
+            </MDBRow> */}
         </>
     );
 }

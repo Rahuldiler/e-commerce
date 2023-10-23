@@ -4,8 +4,10 @@ import { Link, NavLink } from 'react-router-dom';
 import { Container, Dropdown,  Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import logo from "../images/logo.png";
 import { useEffect } from 'react';
+// import { useSelector } from 'react-redux';
 const Header = () =>
 {
+    // const data = useSelector(state => state.items.items);
 
     // Sticky Menu Area
     useEffect(() =>
@@ -34,7 +36,7 @@ const Header = () =>
 
             <section className='header_wrapper'>
                 <div className='container'>
-                    <div className='main_head'>
+                    <div className='main_head'>       
                         <ul className='social_links'>
                             <li>
                                 <p>Follow Us</p>
@@ -87,7 +89,7 @@ const Header = () =>
                                     </li>
                                     <li>
                                         <NavLink to="/cart">
-                                            <i className="fa-solid fa-cart-shopping"></i>
+                                            {/* <i className="fa-solid fa-cart-shopping"></i>{data.length > 0 && <p>(data.length)</p>} */}
                                         </NavLink>
                                     </li>
                                     <li>
@@ -98,19 +100,13 @@ const Header = () =>
 
                                             <Dropdown.Menu>
                                                 <NavLink to="/login">
-                                                    <i className="fa-solid fa-right-to-bracket"></i> Login
-                                                </NavLink>
-                                                <NavLink to="/signup">
-
-                                                    Sign In
-
+                                                    <i className="fa-solid fa-right-to-bracket"></i> Sign In
                                                 </NavLink>
                                                 <button className='logout'>
                                                     <i className="fa-solid fa-right-to-bracket me-1"></i> Sign Out
                                                 </button>
                                             </Dropdown.Menu>
                                         </Dropdown>
-                                      
                                     </li>
 
                                 </ul>
@@ -120,33 +116,33 @@ const Header = () =>
                             </div>
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="ms-auto">
-                                    <Nav.Link href="#features">Home</Nav.Link>
-                                    <Nav.Link href="#pricing">About Us</Nav.Link>
+                                    <Nav.Link to="/">Home</Nav.Link>
+                                    <Nav.Link to="/">About Us</Nav.Link>
                                     <NavDropdown title="Shop" className='nav_drop' id="collasible-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.2">
+                                        <NavDropdown.Item to="/">
                                             Mens
 
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Women</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.4">
+                                        <NavDropdown.Item to="/">Women</NavDropdown.Item>
+                                        <NavDropdown.Item to="/">
                                             Teen
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Pages" className='nav_drop' id="collasible-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.2">
+                                        <NavDropdown.Item to="/">
                                             Mens
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Women</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.4">
+                                        <NavDropdown.Item to="/">Women</NavDropdown.Item>
+                                        <NavDropdown.Item to="/">
                                             Teen
                                         </NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title="Blogs" className='nav_drop' id="collasible-nav-dropdown">
-                                        <NavDropdown.Item href="#action/3.2">
+                                        <NavDropdown.Item to="/">
                                             Mens
                                         </NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.3">Women</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action/3.4">
+                                        <NavDropdown.Item to="/">Women</NavDropdown.Item>
+                                        <NavDropdown.Item to="/">
                                             Teen
                                         </NavDropdown.Item>
                                     </NavDropdown>
@@ -157,8 +153,8 @@ const Header = () =>
                                     <Nav.Link className='px-0 mx-3' to="/cart">
                                         <i className="fa-solid fa-magnifying-glass"></i>
                                     </Nav.Link>
-                                    <Nav.Link className='px-0 mx-3' to="/e-commerce">
-                                        <i className="fa-solid fa-cart-shopping"></i>
+                                    <Nav.Link className='px-0 mx-3' to="/cart">
+                                        {/* <i className="fa-solid fa-cart-shopping"></i>{data.length > 0 && <p>(data.length)</p>} */}
                                     </Nav.Link>
                                     <Dropdown className='user_login mx-3 d-flex align-items-center'>
                                         <Dropdown.Toggle variant="transparent" className='border-0 p-0' id="dropdown-basic" style={{ color: "rgba(0, 0, 0, 0.55)" }}>
@@ -167,12 +163,7 @@ const Header = () =>
 
                                         <Dropdown.Menu>
                                             <NavLink to="/login">
-                                                <i className="fa-solid fa-right-to-bracket"></i> Login
-                                            </NavLink>
-                                            <NavLink to="/signup">
-
-                                                Sign In
-
+                                                <i className="fa-solid fa-right-to-bracket"></i> Sign In
                                             </NavLink>
                                             <button className='logout'>
                                                 <i className="fa-solid fa-right-to-bracket me-1"></i> Sign Out
